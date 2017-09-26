@@ -69,6 +69,8 @@ $(function() {
         }
     });
 
+// Directional functions
+
     function left() {
         if (game_over === false && parseInt(car.css('left')) > 0) {
             car.css('left', parseInt(car.css('left')) - 5);
@@ -100,6 +102,7 @@ $(function() {
    
     anim_id = requestAnimationFrame(repeat);
 
+    // Road moving faster
     function repeat() {
         if (collision(car, car_1) || collision(car, car_2) || collision(car, car_3)) {
             stop_the_game();
@@ -137,6 +140,8 @@ $(function() {
         car.css('top', car_current_top + speed);
     }
 
+    // "Road Moving" Feature
+
     function line_down(line) {
         var line_current_top = parseInt(line.css('top'));
         if (line_current_top > container_height) {
@@ -148,6 +153,8 @@ $(function() {
     restart_btn.click(function() {
         location.reload();
     });
+
+    // game over function
 
     function stop_the_game() {
         game_over = true;
@@ -162,6 +169,7 @@ $(function() {
 
     
 
+// Collision function
 
     function collision($div1, $div2) {
         var x1 = $div1.offset().left;

@@ -1,3 +1,5 @@
+// Main styles
+
 body {
     height: 100%;
     width: 100%;
@@ -6,6 +8,7 @@ body {
     font-family: sans-serif;
 }
 
+// "Game Board"
 #container{
     position: relative;
     height: 90vh;
@@ -15,6 +18,8 @@ body {
     background-color: #292929;
     overflow: hidden;
 }
+
+// Road
 .line{
     position: absolute;
     height: 150px;
@@ -31,6 +36,8 @@ body {
 #line_3{
     top: 450px;
 }
+
+// Game Pieces
 .car{
     position: absolute;
     height: 60px;
@@ -130,6 +137,8 @@ body {
     left: 50%;
     background-color: #26c5ff;
 }
+
+//Restart prompt
 #restart_div {
     position: absolute;
     height: 100%;
@@ -153,6 +162,8 @@ body {
 .small_text{
     font-size: 15px;
 }
+
+//Score Keeper
 #score_div{
     position: absolute;
     margin-top: 20%;
