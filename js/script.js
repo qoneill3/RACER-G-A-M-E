@@ -97,7 +97,7 @@ $(function() {
         }
     }
 
-    /* Move the cars and lines */
+   
     anim_id = requestAnimationFrame(repeat);
 
     function repeat() {
@@ -160,7 +160,7 @@ $(function() {
         restart_btn.focus();
     }
 
-    /* ------------------------------GAME CODE ENDS HERE------------------------------------------- */
+    
 
 
     function collision($div1, $div2) {
