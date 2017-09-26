@@ -15,14 +15,14 @@ $(function() {
     var restart_btn = $('#restart');
     var score = $('#score');
 
-    //saving some initial setup
+  
     var container_left = parseInt(container.css('left'));
     var container_width = parseInt(container.width());
     var container_height = parseInt(container.height());
     var car_width = parseInt(car.width());
     var car_height = parseInt(car.height());
 
-    //some other declarations
+
     var game_over = false;
 
     var score_counter = 1;
@@ -35,9 +35,6 @@ $(function() {
     var move_up = false;
     var move_down = false;
 
-    /* ------------------------------GAME CODE STARTS HERE------------------------------------------- */
-
-    /* Move the cars */
     $(document).on('keydown', function(e) {
         if (game_over === false) {
             var key = e.keyCode;
