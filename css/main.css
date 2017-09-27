@@ -1,5 +1,5 @@
 
-
+/* main styles */
 body {
     height: 100%;
     width: 100%;
@@ -24,6 +24,7 @@ body {
     overflow: hidden;
 }
 
+/* road */
 
 .line{
     position: absolute;
@@ -42,7 +43,7 @@ body {
     top: 450px;
 }
 
-
+/* cars */
 .car{
     position: absolute;
     height: 60px;
